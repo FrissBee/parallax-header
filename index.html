@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://frissbee.de/images/logos/FrissBee-Logo_01.png" type="image/x-icon" />
+    <title>Parallax Header</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Only for this demo: Select change examples -->
+    <script src="./assets/js/change-examples.js" defer></script>
+
+    <!-- 1. Implement the "parallax-header_0.1.0.js" file -->
+    <script src="./assets/js/parallax-header_0.1.0.js" defer></script>
+  </head>
+  <body>
+    <!-- 2. Implement -->
+    <parallax-header y-image="0.5" y-content="0.6" x-content="0" height-container="924px" space-top="0px">
+      <!-- 3. Image - with slot="image" -->
+      <img src="./images/home-top.jpg" alt="home top" slot="image" />
+
+      <!-- 4. Content - with slot="content" -->
+      <div class="container" slot="content">
+        <h1 class="text-center mb-4" style="font-size: 44px; margin-top: 100px; color: rgb(255, 255, 255)"><b>Parallax Header</b></h1>
+        <h2 class="text-center mb-3" style="color: rgb(255, 255, 255)">Scroll me down if you have nothing else to do</h2>
+        <h4 class="text-center mb-3" style="color: #f1f1f1">You'll see what happens then</h4>
+        <div class="d-flex justify-content-center mb-3">
+          <a href="#"><button class="btn btn-dark btn-lg border" onclick="alert('Arrrg!\n\nWhy have you do this?!')">Don`t click me</button></a>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div>
+            <select class="form-select form-select-sm bg-success text-white change-examples">
+              <option disabled selected>Examples</option>
+              <option value="./index.html">Default</option>
+              <option value="./content-down.html">Content down</option>
+              <option value="./multi-content.html">Multi content</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </parallax-header>
+
+    <!-- ====================== -->
+    <!-- The following content -->
+    <!-- ====================== -->
+    <main class="bg-light">
+      <div class="container py-5 px-5">
+        <div class="mb-5" style="font-size: 18px">
+          Download and documentation on
+          <a href="https://github.com/FrissBee/parallax-header" target="_blank" rel="noopener noreferrer">GitHub</a><br />
+          Created by <a href="https://frissbee.de/" target="_blank" rel="noopener noreferrer">FrissBee.de</a>
+          <hr />
+        </div>
+
+        <div class="mb-5">
+          <p class="text-danger"><b>The following content must have a background color.</b></p>
+          <h3>Other examples</h3>
+          <div class="mb-3">
+            <a href="./content-down.html">
+              <button class="btn btn-primary">Content down</button>
+            </a>
+          </div>
+          <div>
+            <a href="./multi-content.html">
+              <button class="btn btn-primary">Multi Content</button>
+            </a>
+          </div>
+        </div>
+        <h1>Parallax Header - default</h1>
+        <br />
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo non recusandae molestias nam modi, nostrum sequi. Ab soluta blanditiis
+          exercitationem voluptatem assumenda molestias, fugit, pariatur, maxime similique animi eos sed. Laudantium eum pariatur non, quasi corrupti
+          ducimus consequatur provident numquam, fugiat minima doloremque inventore laboriosam quis enim adipisci commodi. Suscipit tempore quidem hic
+          quo nesciunt doloribus sapiente quod voluptatum eaque. Accusantium corporis molestiae modi facilis laudantium doloremque adipisci corrupti
+          nesciunt obcaecati voluptates libero eum, officia in praesentium accusamus eius atque ipsa quos fugit, vitae est possimus animi quam. Harum,
+          accusantium. Accusamus molestiae ipsam vero exercitationem praesentium soluta deserunt excepturi. Recusandae iure eligendi, aperiam nobis
+          accusamus provident ducimus rerum corporis ex eveniet, culpa doloremque minus mollitia deleniti vel adipisci deserunt eum! Quis quam ea
+          consequatur modi saepe impedit quos autem aliquid repudiandae ad sint veniam officiis voluptas, architecto, totam dolorem praesentium
+          voluptates facere esse eos non fugit quidem ut. Perspiciatis, architecto. Rem dolorum soluta voluptas nostrum aut unde, sint corporis
+          recusandae placeat labore dolores mollitia voluptatem voluptate possimus deserunt alias ipsum libero temporibus. Aliquid quam quaerat iure
+          consectetur minima labore accusantium! Laborum deleniti magni optio consectetur deserunt doloribus error ipsum, earum at, quia commodi!
+          Libero, accusamus sint ab nam impedit maxime ipsum recusandae incidunt labore temporibus veniam vitae dolorum natus non. Aut doloribus
+          asperiores provident quod. Optio eum doloremque dolore magni suscipit quos totam, distinctio ratione sequi! Magnam excepturi, molestiae,
+          illum et, debitis vero iusto numquam nihil saepe nisi earum illo! Dolor doloremque quaerat asperiores aut est, veniam expedita
+          reprehenderit, aspernatur explicabo amet, fuga deleniti accusamus eos laboriosam exercitationem inventore adipisci quasi hic totam
+          repellendus necessitatibus corporis unde. Harum, praesentium non. Quas unde, qui error fugiat molestiae, quo maxime earum facilis voluptas
+          aliquam, nihil nulla veniam aut doloribus molestias possimus cupiditate totam. Quae magnam doloremque debitis velit labore minima sit ipsa.
+          Fuga at ab quo, aut obcaecati sapiente, dicta accusamus quidem quisquam dolore rerum vero nihil animi saepe qui. Iste recusandae cumque
+          minus vel iusto delectus laudantium consequuntur commodi quas similique. Dignissimos consectetur, voluptatum commodi laboriosam rerum fuga
+          explicabo in necessitatibus nemo nisi fugit magnam quisquam ullam dicta voluptatibus perspiciatis eius tenetur quae porro saepe. Mollitia
+          architecto suscipit officia velit accusamus! Consectetur dicta sit officia harum hic ab in placeat quam quos, nesciunt vitae eius quaerat
+          reiciendis incidunt rem cupiditate nihil ullam provident, odit dolor, perspiciatis quisquam saepe? Debitis, iusto distinctio! Perferendis
+          veniam mollitia beatae commodi omnis impedit dolores reiciendis dolorum dignissimos voluptatibus quibusdam maxime facere nulla quidem
+          blanditiis, officiis officia animi deserunt. Iusto provident maiores aliquid perferendis, repellendus velit obcaecati. Nisi recusandae rerum
+          velit magnam repellendus veritatis totam? Et, architecto hic doloremque quisquam quaerat quasi minus porro, id asperiores omnis tempore
+          deserunt fugiat eum odit similique nihil quis doloribus libero? Veritatis doloribus consectetur consequuntur vero qui! Eos, cum commodi aut,
+          voluptas ipsam modi, ullam repellat dicta rem magnam adipisci saepe et natus doloribus beatae molestias? Pariatur molestiae sequi dolor
+          adipisci? Cum, obcaecati quidem dolorum asperiores nisi debitis, corporis aperiam eligendi alias veniam reprehenderit nostrum ipsam eum in
+          sit officia praesentium nam, voluptate adipisci ducimus deleniti! Veniam consectetur ipsam error est! Sint ea maiores, sed reiciendis iusto
+          tenetur ex expedita molestiae nemo obcaecati. Placeat facere iusto deserunt repellendus sequi accusantium in animi ab aperiam! Fuga aperiam
+          nesciunt, quisquam autem eos et? Ex dolorum eligendi ullam dolores blanditiis id cum, facere assumenda neque delectus nesciunt maxime
+          dignissimos similique ipsa in ipsam accusantium eveniet a architecto quis quam? Quam doloribus officiis molestiae velit? Cum voluptatum
+          voluptates expedita, repellendus distinctio saepe dicta quaerat maiores non aspernatur iusto quo repellat in placeat, quos autem neque quas
+          mollitia id? Perspiciatis magnam consequatur, odio ducimus voluptate id.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ab quas nobis accusantium corporis aspernatur perspiciatis, autem
+          reprehenderit possimus non, blanditiis nisi eaque hic? Cumque repellendus sequi tenetur culpa nulla! Quod facilis nam id corporis harum
+          illum, perspiciatis labore omnis quisquam, ad mollitia aliquid inventore doloremque neque minus perferendis libero beatae deserunt magnam
+          iste numquam laboriosam autem impedit iure. Tempore! Sequi maiores unde possimus soluta, recusandae cum quia enim velit sed adipisci
+          corporis nemo architecto, tempore nulla dolorum? Praesentium fugit vitae ratione provident cum laboriosam at ullam dolorum expedita quis?
+          Possimus nulla corporis laborum libero voluptatem. Dignissimos, corrupti laborum eveniet voluptatem non officiis exercitationem quae nisi
+          nam accusamus dolores maxime quisquam quaerat mollitia dolorum officia delectus dicta sit consequatur architecto? In veniam nesciunt
+          quisquam voluptatum magnam illo optio? Accusamus deleniti perspiciatis cumque expedita, nisi hic exercitationem voluptas eveniet ex minus
+          numquam nesciunt blanditiis et sapiente impedit nam, quod ipsum fugiat. A dignissimos et, assumenda id unde perferendis aliquid, culpa nisi
+          delectus repellendus reiciendis dolorem nostrum inventore maxime quam voluptates ad minus? Repellat eligendi modi voluptates quaerat
+          corrupti cum. Illum, dolore? Rerum doloremque quaerat ut libero repellat non vel hic quis, eos a, rem, voluptatem minima accusantium.
+          Dolores recusandae enim sed impedit adipisci inventore ex tempore, porro quaerat. Enim, autem beatae? Numquam fuga laudantium maiores
+          adipisci aliquam earum in cumque tempora. Facilis ratione temporibus repellendus voluptate, alias voluptatibus, illum accusamus beatae
+          eligendi quis aliquid expedita. Obcaecati aliquam saepe cupiditate harum iste? Deserunt inventore ullam autem, dolore expedita numquam sint
+          magnam officia aut illum molestias nemo obcaecati, provident eveniet a impedit accusamus ut. Architecto tenetur ipsam nostrum officiis
+          repudiandae at. Doloribus, optio. Ab adipisci quia quisquam dolore atque recusandae magni, quis quaerat dolores itaque cupiditate aperiam
+          iusto numquam, ipsum vero? Voluptas illo consequuntur corporis blanditiis corrupti veritatis vitae quod eaque rerum nihil!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
