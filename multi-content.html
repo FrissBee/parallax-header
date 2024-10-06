@@ -16,198 +16,102 @@
     <script src="./assets/js/change-examples.js" defer></script>
 
     <!-- 1. Import -->
-    <script src="./assets/js/parallax-header_0.1.0.js" defer></script>
+    <script src="./assets/js/parallax-header_1.0.0.js" defer></script>
   </head>
+
   <body>
     <!-- 2. Implement -->
-    <parallax-header y-image="0.7" height-container="924px" multi-content>
-      <!-- 3. Image - with slot="image" -->
-      <img src="./images/home-top-0d.jpg" alt="home top" slot="image" />
+    <parallax-header height-container="1124px" space-top="0px" multi-content>
+      <!-- 3. Background Image & Content -->
 
-      <!-- 4. Content - with slot="content" -->
-      <div slot="content">
-        <!-- 4.1. Content -->
-        <div
-          style="
-            top: 260px;
-            position: absolute;
-            width: 100%;
-            height: 804px;
-            background-image: url('./images/home-top-9b.png');
-            background-size: cover;
-            z-index: -1;
-          "
-          class="parallax-header-content"
-          y-content="0.7"
-          x-content="0"
-        ></div>
+      <!-- 3.1. Background Image 1 -->
+      <parallax-header-image y-content="0.75">
+        <img src="./images/home-top-0d.jpg" alt="" />
+      </parallax-header-image>
 
-        <!-- 4.2. Content - moon -->
+      <!-- 3.1. Background Image 2 -->
+      <parallax-header-image y-content="0.7">
+        <img src="./images/home-top-9b.png" style="top: 260px; position: absolute" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.3. Background Image 3 - moon  -->
+      <parallax-header-image y-content="0" x-content="2.5">
+        <img src="./images/home-top-5.png" style="top: 240px; left: 500px; position: absolute; width: 100px; height: auto; opacity: 0.65" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.4. Background Image 4 -->
+      <parallax-header-image y-content="0.6">
+        <img src="./images/home-top-2.png" style="top: 70px; position: absolute" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.5. Background Image 5 - birds -->
+      <parallax-header-image y-content="0.85" x-content="0.9">
+        <img src="./images/birds.gif" style="top: 100px; left: 60px; position: absolute; width: 260px; height: auto" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.6. Background Image 6 -->
+      <parallax-header-image y-content="0.5">
+        <img src="./images/home-top-3.png" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.7. Background Image 7 - fire -->
+      <parallax-header-image y-content="0.47">
+        <img src="./images/giphy_04.gif" style="top: 546px; left: 940px; position: absolute; width: 60px; height: auto" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.8. Background Image 8 -->
+      <parallax-header-image y-content="0.46">
+        <img src="./images/home-top-4.png" alt="" />
+      </parallax-header-image>
+
+      <!-- 3.9. Content 1 -->
+      <parallax-header-content y-content="-0.2">
         <div
-          class="parallax-header-content"
-          style="width: 100%; height: 924px; overflow: hidden; top: 0; position: absolute; z-index: -1"
-          y-content="0"
-          x-content="0"
+          class="text-center"
+          style="font-size: 88px; font-family: Impact, sans-serif; color: #83171782; -webkit-text-stroke: 1px rgb(231, 231, 231); margin-top: 670px"
         >
-          <img
-            alt="moon"
-            src="./images/home-top-5.png"
-            style="top: 240px; left: 500px; position: absolute; width: 100px; height: auto; opacity: 0.65"
-            class="parallax-header-content"
-            y-content="0"
-            x-content="2.5"
-          />
+          *HO-riz-ON*
         </div>
+      </parallax-header-content>
 
-        <!-- 4.3. Content -->
-        <div
-          style="
-            top: 70px;
-            position: absolute;
-            width: 100%;
-            height: 1080px;
-            background-image: url('./images/home-top-2.png');
-            background-size: cover;
-            z-index: -1;
-          "
-          class="parallax-header-content"
-          y-content="0.6"
-          x-content="0"
-        ></div>
-
-        <!-- 4.5. Content - birds -->
-        <div
-          class="parallax-header-content"
-          style="width: 100%; height: 924px; overflow: hidden; top: 0; position: absolute; z-index: -1"
-          y-content="0"
-          x-content="0"
-        >
-          <img
-            src="./images/birds.gif"
-            style="top: 0; position: absolute; top: 100px; left: 60px; position: absolute; width: 260px; height: auto"
-            class="parallax-header-content"
-            y-content="0.85"
-            x-content="0.9"
-          />
-        </div>
-
-        <!-- 4.4. Content -->
-        <div
-          style="
-            top: 0;
-            position: absolute;
-            width: 100%;
-            height: 1080px;
-            background-image: url('./images/home-top-3.png');
-            background-size: cover;
-            background-position: left;
-            z-index: -1;
-          "
-          class="parallax-header-content"
-          y-content="0.5"
-          x-content="0"
-        ></div>
-
-        <!-- 4.5. Content - fire -->
-        <div
-          class="parallax-header-content"
-          style="width: 100%; height: 1080px; overflow: hidden; top: 0; position: absolute; z-index: -1"
-          y-content="0"
-          x-content="0"
-        >
-          <img
-            src="./images/giphy_04.gif"
-            style="top: 0; position: absolute; top: 546px; left: 940px; position: absolute; width: 60px; height: auto"
-            class="parallax-header-content"
-            y-content="0.47"
-            x-content="0"
-          />
-        </div>
-
-        <!-- 4.5. Content -->
-        <div
-          style="
-            top: 0;
-            position: absolute;
-            width: 100%;
-            height: 1080px;
-            z-index: -1;
-            background-image: url('./images/home-top-4.png');
-            background-size: cover;
-          "
-          class="parallax-header-content"
-          y-content="0.46"
-          x-content="0"
-        ></div>
-
-        <!-- 4.6. Content -->
-        <div
-          style="top: 640px; position: absolute; height: 924px; width: 100%; z-index: -1"
-          class="parallax-header-content"
-          y-content="0.1"
-          x-content="0"
-        >
-          <div
-            class="text-center"
-            style="font-size: 88px; font-family: Impact, sans-serif; color: #83171782; -webkit-text-stroke: 1px rgb(231, 231, 231)"
-          >
-            *HO-riz-ON*
-          </div>
-        </div>
-
-        <!-- 4.7. Content  -->
-        <div class="parallax-header-content" style="top: 0; position: relative" y-content="1.4" x-content="0">
-          <div class="container content-container">
-            <h1 class="text-center mb-4" style="font-size: 44px; margin-top: 80px; color: rgb(255, 255, 255)"><b>Multi Parallax</b></h1>
-            <h2 class="text-center mb-3" style="color: rgb(255, 255, 255)">Scroll me down if you have nothing else to do</h2>
-            <h4 class="text-center mb-3" style="color: #f1f1f1">You'll see what happens then</h4>
-            <div class="d-flex justify-content-center">
-              <button class="btn btn-dark btn-lg border" onclick="alert('Arrrg!\n\nWhy have you do this?!')">Don`t click me</button>
-            </div>
-            <div class="d-flex justify-content-center mt-3">
-              <div>
-                <select class="form-select form-select-sm bg-success text-white change-examples">
-                  <option disabled selected>Examples</option>
-                  <option value="./index.html">Default</option>
-                  <option value="./content-down.html">Content down</option>
-                  <option value="./multi-content.html">Multi content</option>
-                </select>
-              </div>
+      <!-- 3.10. Content 2 -->
+      <parallax-header-content y-content="1.5">
+        <div class="container content-container" style="margin-top: -800px">
+          <h1 class="text-center mb-4" style="font-size: 44px; margin-top: 80px; color: rgb(255, 255, 255)"><b>Multi Parallax</b></h1>
+          <h2 class="text-center mb-3" style="color: rgb(255, 255, 255)">Scroll me down if you have nothing else to do</h2>
+          <h4 class="text-center mb-3" style="color: #f1f1f1">You'll see what happens then</h4>
+          <div class="d-flex justify-content-center mt-3">
+            <div>
+              <select class="form-select form-select-lg bg-success text-white mt-3 change-examples">
+                <option disabled selected>Examples</option>
+                <option value="./index.html">Default</option>
+                <option value="./content-down.html">Content down</option>
+                <option value="./multi-content.html">Multi content</option>
+              </select>
             </div>
           </div>
         </div>
-      </div>
+      </parallax-header-content>
     </parallax-header>
 
     <!-- ====================== -->
     <!-- The following content -->
     <!-- ====================== -->
-    <main class="bg-dark text-white">
-      <div class="container py-5">
-        <div class="mb-5" style="font-size: 18px">
-          Download and documentation on
-          <a href="https://github.com/FrissBee/parallax-header" target="_blank" rel="noopener noreferrer">GitHub</a><br />
-          Created by <a href="https://frissbee.de/" target="_blank" rel="noopener noreferrer">FrissBee.de</a>
-          <hr />
+    <main class="bg-dark">
+      <div class="bg-light border-bottom">
+        <div class="container py-4">
+          <h3>Parallax Header - Multi Content</h3>
+          <div style="font-size: 18px">
+            Download and documentation on
+            <a href="https://github.com/FrissBee/parallax-header" target="_blank" rel="noopener noreferrer">GitHub</a><br />
+            Created by <a href="https://frissbee.de/" target="_blank" rel="noopener noreferrer">FrissBee.de</a>
+          </div>
         </div>
-
-        <p class="text-danger"><b>The following content must have a background color.</b></p>
+      </div>
+      <div class="container py-5 text-white">
         <div class="mb-5">
-          <h3>Other examples</h3>
-          <div class="mb-3">
-            <a href="./index.html">
-              <button class="btn btn-primary">Default</button>
-            </a>
-          </div>
-          <div>
-            <a href="./content-down.html">
-              <button class="btn btn-primary">Content down</button>
-            </a>
-          </div>
-        </div>
-        <h1>Parallax Header - Multi Content</h1>
+        <h1>A wonderful headline</h1>
         <br />
-        <p><b>I must have a background color</b></p>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo non recusandae molestias nam modi, nostrum sequi. Ab soluta blanditiis
           exercitationem voluptatem assumenda molestias, fugit, pariatur, maxime similique animi eos sed. Laudantium eum pariatur non, quasi corrupti
