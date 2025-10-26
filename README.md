@@ -16,11 +16,11 @@ Implement the _Parallax Header_ in your project:
 
 **1. Step - download and add**
 
-Download or clone the repo and add the file `parallax-header_1.0.0.js` into your project.
+Download or clone the repo and add the file `parallax-header_1.1.0.js` into your project.
 
 **2. Step - implementation**
 
-Include the `parallax-header_1.0.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/parallax-header_1.0.0.js" defer></script>` in the `<head>`-Tag
+Include the `parallax-header_1.1.0.js` file in the corresponding HTML or PHP file with `<script src="./path-to-the-file/parallax-header_1.1.0.js" defer></script>` in the `<head>`-Tag
 
 **3. Step - implement the parallax-header HTML tag**
 
@@ -41,8 +41,8 @@ JavaScript is not necessary
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 1. Implement the "parallax-header_1.0.0.js" file -->
-    <script src="./assets/js/parallax-header_1.0.0.js" defer></script>
+    <!-- 1. Implement the "parallax-header_1.1.0.js" file -->
+    <script src="./assets/js/parallax-header_1.1.0.js" defer></script>
   </head>
 
   <body>
